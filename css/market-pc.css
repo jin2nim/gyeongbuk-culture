@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    color: #2b1c1f;
+}
+
+/* nav 클릭 */
+nav ul li:nth-child(3) a{
+    font-weight: 700;
+    color: #e9ac18;
+}
+
+section {
+    width: 100%;
+}
+
+.subtitle {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.subtitle>img {
+    width: 100%;
+    display: block;
+    /*margin-top: 30%;*/
+}
+
+.subtitle>img:nth-child(2) {
+    display: none;
+}
+
+/*커밍순*/
+.comingsoon, .comingsoon>img {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.comingsoon {
+    margin-top: -8%;
+}
+.comingsoon>img:nth-child(2) {display: none;}
+
+/* 상품리스트 */
+
+.sell-con {
+    width: 54%;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+    margin-top: -7%;
+    margin-bottom: 8%;
+}
+
+.sell-con a {
+    width: 31%;
+    justify-content: flex;
+    margin: 0 1%;
+    position: relative;
+    /* background-color: yellow; */
+}
+
+.sell-con a img:nth-child(1) {
+    position: relative;
+}
+.sell-con a:nth-child(15) {
+    margin: 0;
+}
+.sell-con a img:nth-child(1) {
+    width: 31%;
+    padding-bottom: 2%;
+}
+.sell-con a img:nth-child(2) {
+    width: 31%;
+    padding-bottom: 2%;
+    display: none;
+}
+
+.sell-con a img:nth-child(3) {
+    width: 98%;
+    position: absolute;
+    left: 0.1%;
+    margin-top: 19.1%;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.sell-con a:hover img:nth-child(3) {
+    width: 98%;
+    height: auto;
+    position: absolute;
+    left: 0.1%;
+    margin-top: 19.1%;
+    opacity: 1;
+}
+
+.number {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.number a {
+    margin: 0 0.5%;
+}
+.number .prev, .number .next {
+    color: #e9ac18;
+    font-size: 1rem;
+}
+.page {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #555555;
+}
+.page-on {
+    font-weight: 500;
+    color: #333;
+}
+
+@media screen and (max-width:1100px) {
+    .subtitle {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .subtitle>img:nth-child(1) {
+        width: 140%;
+        /* position: absolute; */
+        margin-left: -22%;
+    }
+    .comingsoon {
+        width: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sell-con {
+        width: 80%;
+        /* background-color: yellow; */
+        margin-top: -11%;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .subtitle>img:nth-child(1) {
+        display: none;
+    }
+    .subtitle>img:nth-child(2) {
+        width: 100%;
+        display: block;
+    }
+    .comingsoon {
+        width: 100%;
+        margin-top: 15%;
+    }
+    .comingsoon>img:nth-child(1) {display: none;}
+    .comingsoon>img:nth-child(2) {display: block;}
+
+    .sell-con {
+        width: 92%;
+        /* background-color: yellow; */
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .sell-con a {
+        width: 46%;
+        margin: 0 2%;
+    }
+    .sell-con a img {
+        width: 45%;
+    }
+
+    .number {
+        padding-bottom: 15%;
+    }
+}

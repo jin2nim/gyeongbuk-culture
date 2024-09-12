@@ -1,0 +1,237 @@
+@media screen and (max-width:720px) {
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    
+    .v-slide, .contant-slide, .sell, .news, .trip {
+        width: 100% !important;
+    }
+    .v-slide>img:nth-child(1), .line-area, .text-area {
+        display: none;
+    }
+    .v-slide>img:nth-child(2) {
+        display: block;
+    }
+    .main-slider {
+        width: 92%;
+    }
+    
+    .m-slide {
+        width: 92%;
+        height: 47.05%;
+        top: 25%;
+    }
+    
+    .main-slider .swiper-button-next, .main-slider .swiper-button-prev {
+        color: #3a272a;
+        position: absolute;
+        top: 84%;
+        width: 23%;
+        font-size: 10px;
+        /* background-color: yellowgreen; */
+    }
+
+    .m-next span {
+        background-color: yellowgreen;
+        
+    }
+
+    .main-slider .swiper-button-next {
+        right: 0%;
+    }
+
+    .main-slider .swiper-button-prev {
+        left: 0%;
+    }
+
+    .m-pager span {
+        margin: 7px;
+        width: 25px;
+        height: 25px;
+    }
+    .m-pager span.swiper-pagination-bullet-active {
+        width: 25px;
+        height: 25px;
+    }
+
+    .c-slide .swiper-slide>img:nth-child(1) {
+        display: none;
+    }
+    .c-slide .swiper-slide>img:nth-child(2) {
+        display: block;
+    }
+    .c-slide .swiper-slide>a {
+        height: 5%;
+        position: absolute;
+        bottom: 37%;
+        left: 6%;
+    }
+    .c-pager {
+        width: 85%;
+        bottom: 30%;
+        left: 50%;
+        transform: translateX(-50%) !important;
+        text-align: left !important;
+        /* background-color: aliceblue; */
+    }
+    .c-pager span {
+        margin: 1%;
+        width: 7px;
+        height: 7px;
+    }
+    
+    .c-pager span.swiper-pagination-bullet-active {
+        width: 20px;
+        height: 7px;
+        border-radius: 10px;
+    }
+
+    .sell-pc, .news>img:nth-child(1), .trip>img:nth-child(1), .news5, .news6 {
+        display: none;
+    }
+
+    .sell-mobile, .news>img:nth-child(2), .trip>img:nth-child(2), .sell-mobile>img {
+        display: block;
+    }
+
+    
+    .msell-slider {
+        width: 92%;
+        margin: 0 auto;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .msell-slide {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .msell-slider .swiper-slide {
+        width: 45%;
+    }
+
+    .msell-slider .swiper-slide img {
+        width: 100%;
+    }
+
+    .msell-pager {
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: -20%;
+        text-align: right !important;
+    }
+
+    .msell-pager span {
+        margin-right: 1%;
+        width: 7px;
+        height: 7px;
+        background-color: #fff;
+        border: 2px solid #daa342;
+        opacity: 1;
+    }
+
+    .msell-pager span.swiper-pagination-bullet-active {
+        width: 20px;
+        height: 7px;
+        border-radius: 30px;
+        background-color: #daa342;
+    }
+
+    .msell-slider>a {
+        position: absolute;
+        width: 37.5%;
+        bottom: -25%;
+    }
+    .msell-slider>a>img {
+        width: 100%;
+    }
+
+    /* 뉴스 */
+    .news-section {
+        position: absolute;
+        width: 92%;
+        height: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 25%;
+    }
+
+    .news-con {
+        width: 48.5%;
+        height: 36.6%;
+        margin-right: 3%;
+        /* background-color: yellow; */
+        float: left;
+        margin-bottom: 5%;
+    }
+
+    .news2, .news4 {
+        margin-right: 0;
+    }
+    .news3 {
+        margin-right: 3%;
+    }
+    .more {
+        width: 37.5%;
+        left: 4%;
+        transform: none;
+        bottom: 10%;
+    }
+
+    /* trip */
+    .trip-slider {
+        position: absolute;
+        width: 90%;
+        height: 70%;
+        top: 27%;
+        left: 50%;
+        transform: translateX(-50%);
+        /* background-color: antiquewhite; */
+    }
+    
+    .trip-slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .trip-slide iframe {
+        position: absolute;
+        width: 100%;
+        height: 55%;
+        top: 10%;
+    }
+    
+    .trip-pager {
+        bottom: 18%;
+        text-align: right !important;
+    }
+    
+    .trip-pager span {
+        margin-right: 2%;
+        width: 7px;
+        height: 7px;
+    }
+    
+    .trip-pager span.swiper-pagination-bullet-active {
+        width: 20px;
+        height: 7px;
+    }
+    
+    .trip-slider a {
+        width: 37.5%;
+        left: 0;
+        transform: none;
+        bottom: 15%;
+    }
+    
+
+}

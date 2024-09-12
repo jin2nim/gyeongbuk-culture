@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    color: #2b1c1f;
+}
+
+/* nav 클릭 */
+nav ul li:nth-child(4) a{
+    font-weight: 700;
+    color: #e9ac18;
+}
+
+section {
+    width: 100%;
+}
+
+.subtitle {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.subtitle>img {
+    width: 100%;
+}
+.subtitle>img:nth-child(2) {
+    display: none;
+}
+
+/* 상품리스트 */
+
+.sell-con {
+    width: 100%;
+    margin: 0 auto;
+    height: 1500px;
+    /* background-color: antiquewhite; */
+    margin-top: -7%;
+    margin-bottom: 20%;
+    position: relative;
+}
+/* news */
+
+.news-section {
+    position: absolute;
+    width: 53%;
+    height: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2%;
+}
+
+.news-con {
+    width: 32%;
+    height: auto;
+    margin-right: 2%;
+    /* background-color: yellow; */
+    float: left;
+    margin-bottom: 7%;
+}
+
+.news-img {
+    width: 100%;
+}
+.mb-area {
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #DAA342;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.news-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #595757;
+}
+.mb-text {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #7C7C7C;
+}
+
+.news3, .news6, .news9, .news12, .news15 {
+    margin-right: 0;
+}
+
+
+.number {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.number a {
+    margin: 0 0.5%;
+}
+.number .prev, .number .next {
+    color: #e9ac18;
+    font-size: 1rem;
+}
+.page {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #555555;
+}
+.page-on {
+    font-weight: 500;
+    color: #333;
+}
+
+@media screen and (max-width:1420px) {
+    .mb-area {
+        font-size: 1.6rem;
+    }
+    .news-title {
+        font-size: 1rem;
+    }
+    .mb-text {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:1100px) {
+    .subtitle {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .subtitle>img:nth-child(1) {
+        width: 140%;
+        /* position: absolute; */
+        margin-left: -22%;
+    }
+    .sell-con {
+        margin-top: -11%;
+        margin-bottom: 15%;
+        height: 1800px;
+    }
+    .news-section {
+        position: absolute;
+        width: 78%;
+        height: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 2%;
+    }
+    .mb-area {
+        font-size: 1.8rem;
+    }
+    .news-title {
+        font-size: 1.2rem;
+    }
+    .mb-text {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:940px) {
+    .sell-con {
+        margin-top: -11%;
+        margin-bottom: 15%;
+        height: 1400px;
+    }
+    .mb-area {
+        font-size: 1.6rem;
+    }
+    .news-title {
+        font-size: 1rem;
+    }
+    .mb-text {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:720px) {
+    .subtitle>img:nth-child(1) {display: none;}
+    .subtitle>img:nth-child(2) {display: block;}
+
+    .sell-con {
+        height: 1100px;
+        margin-top: 1%;
+    }
+    .news-section {
+        position: absolute;
+        width: 94.5%;
+        height: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 4%;
+        margin: 0 2%;
+        /* background-color: yellowgreen; */
+    }
+    .news-con {
+        width: 47%;
+        float: left;
+        margin-bottom: 10%;
+        margin-right: 0 !important;
+    }
+
+    .news-con:nth-child(2n-1) {
+        float: left;
+        margin-right: 3.5% !important;
+    }
+
+    .news-con {
+        margin-bottom: 10%;
+    }
+    .mb-area {
+        font-size: 1rem;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+    .news-title {
+        font-size: 0.8rem;
+    }
+    .mb-text {
+        font-size: 0.55rem;
+    }
+
+    .news11, .news12, .news13, .news14, .news15 {
+        display: none;
+    }
+
+    .number {
+        padding-bottom: 15%;
+    }
+}
+
+

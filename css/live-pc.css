@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    color: #2b1c1f;
+}
+
+/* nav 클릭 */
+nav ul li:nth-child(2) a{
+    font-weight: 700;
+    color: #e9ac18;
+}
+
+section {
+    width: 100%;
+}
+
+/* contain */
+/* title */
+.title, .title>img {
+    width: 100%;
+    position: relative;
+}
+
+.title>img:nth-child(2) {
+    display: none;
+}
+
+/* contant */
+
+.contant {
+    width: 100%;
+    position: relative;
+}
+
+.contant>img {
+    width: 100%;
+    position: relative;
+}
+
+.person-img {
+    position: absolute;
+    width: 53%;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.per-area {
+    width: 22.75%;
+    position: absolute;
+}
+
+.per-area img {
+    width: 100%;
+}
+
+.per-area p {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 105%;
+    color: #4D2E1C;
+    font-weight: 700;
+}
+
+.per-area2 {
+    left: 25.75%;
+}
+
+.per-area3 {
+    right: 25.75%;
+}
+
+.per-area4 {
+    right: 0;
+}
+
+.live-area {
+    width: 53%;
+    height: 65%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.live {
+    position: absolute;
+    cursor: pointer;
+}
+
+.live2 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.live3 {
+    top: 100%;
+    transform: translateY(26.5%);
+}
+
+.live-area img {
+    width: 100%;
+}
+
+.per-area>img:nth-child(2) {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    .title, .contant {
+        width: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .per-area p {
+        font-size: 0.9rem;
+        position: absolute;
+        top: 105%;
+        color: #4D2E1C;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width:720px) {
+    .title, .contant {
+        width: 100%;
+    }
+    .title>img:nth-child(1) {display: none;}
+    .title>img:nth-child(2) {
+        display: block;
+        margin-top: 5%;
+    }
+
+    .contant {
+        height: 900px;
+    }
+    .per-area>img:nth-child(1), .per-area>p {
+        display: none;
+    }
+    .per-area>img:nth-child(2) {
+        display: block;
+    }
+    .person-img, .live-area {
+        width: 92%;
+    }
+
+    .per-area {
+        width: 47%;
+    }
+    .per-area2 {
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    .per-area3 {
+        right: none;
+        left: 0;
+        margin-top: 60%;
+    }
+    .per-area4 {
+        margin-top: 60%;
+        right: 0;
+    }
+
+    
+    .live-area {
+        height: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        /* background-color: #e9ac18; */
+    }
+
+    .live {
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .live2 {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .live3 {
+        top: 100%;
+        transform: translateY(26.5%);
+    }
+
+    .live-area img {
+        width: 100%;
+    }
+}

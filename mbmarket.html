@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 네이버최적화 소유권확인 -->
+    <meta name="naver-site-verification" content="" />
+    <!-- 페이지 설명 : 이게 있어야 검색 가능 -->
+    <meta name="description" content="경북 특산품을 담은 찾아가는 플리마켓, 2021 경북 문화보부상 여행">
+    <!-- 노출키워드 -->
+    <meta name="keywords" content="경북, 문화보부상, 경북여행, 경북특산품, 플리마켓, 경북플리마켓, 흥학행">
+    <!-- 선호URL -->
+    <link rel="canonical" href="https://gbmb.co.kr">
+
+
+
+    <!-- Open grapy : 카톡 공유하기 했을 때 뜨는 거 -->
+
+    <!-- 필수는 아닌데, 하단에 URL링크 뜨니까 간결한걸로 써주기 -->
+    <meta property="og:url" content="gbmb.co.kr"/>
+    <!-- 공유하는 링크의 타입 필수X -->
+    <meta property="og:type" content="website"/>
+    <!-- 페이지 제목 -->
+    <meta property="og:title" content="경북 문화보부상"/>
+    <!-- 페이지 설명 길게 안들어가니까 짧게 쓰기! 아래의 경우 돌까지 나옴 -->
+    <meta property="og:description" content="신나고 배움이있고 가치가 있는 문화보부상 여행"/>
+    <!-- 페이지랑 같이 뜨는 이미지 -->
+    <meta property="og:image" content="https://gbmb.co.kr/main-img.png"/>        
+    
+    <title>경북 문화보부상</title>
+    <!-- 타이틀에 파비콘 넣기 -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <!-- 반응형 css -->
+    <link rel="stylesheet" href="css/market-pc.css">
+    
+    <!-- 헤더/푸터 css -->
+    <link rel="stylesheet" href="css/hf.css">
+    <!-- 자바스크립트 기본 스타일시트 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    
+    <!-- 스크립트 -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- 스와이퍼 스크립트 -->
+    <script src="js/swiper.min.js"></script>
+    <!-- fancybox script -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- 우클릭 금지 스크립트 -->
+    <script type="text/javascript">
+		var omitformtags=["input", "textarea", "select"]
+		omitformtags=omitformtags.join("|")
+		function disableselect(e){
+		if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+		return false
+		}
+		function reEnable(){
+		return true
+		}
+		if (typeof document.onselectstart!="undefined")
+		document.onselectstart=new Function ("return false")
+		else{
+		document.onmousedown=disableselect
+		document.onmouseup=reEnable
+		}
+	$(document).ready(function(){
+	  $(document).bind('keydown', function(e) {
+		if(e.keyCode == 123) {
+		  e.preventDefault();
+		  e.returnValue = false;
+		}
+	  });
+	});
+	</script>
+
+</head>
+
+
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+    <div class="site-wrap" id="a0">
+        <header>
+            <div class="header-area">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/index/h-logo.png" alt="흥학행">
+                    </a>
+                </h1>
+                <div class="menu-btn"><img src="img/menu-btn.png" alt="메뉴"></div>
+
+                <nav>
+                    <div class="close-btn"><img src="img/close-btn.png" alt="X"></div>
+                    <ul>
+                        <li><a href="mbintro.html">행사 소개</a></li>
+                        <li><a href="mblive.html">보부상 라이브</a></li>
+                        <li><a href="mbmarket.html">보부상 장터</a></li>
+                        <li><a href="mbnews.html">보부상 뉴스</a></li>
+                        <li><a href="mbtrip.html">보부상 투어</a></li>
+                        <li><a href="mbevent.html">보부상 이벤트</a></li>
+                        <li><a href="index.html"><img src="img/index/h-logo.png" alt="흥학행문화보부상"></a></li>
+                    </ul>
+                </nav>
+            </div> <!-- header-area end -->
+            <div class="h-bg"></div>
+        </header>
+
+        <script>
+            $(function(){
+                $('.m-menu-btn').click(function(){
+                    $('nav').show();
+                });
+                $('.m-menu-btn').click(function(){
+                    $('.close-area').show();
+                });
+                $('.close-area').click(function(){
+                    $('nav').hide();
+                });
+                $('.close-area').click(function(){
+                    $('.close-area').hide();
+                });
+
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 50)
+                    $('.h-bg').slideDown(300)
+                    else {
+                    $('.h-bg').slideUp(300)
+                    }
+                });
+            });
+        </script>
+
+        <section>
+            <article class="subtop-area">
+                <img src="img/subp-top.png" alt="2021 문화보부상 행사">
+                <div class="title-area">
+                    <h2>문화 보부상 장터</h2>
+                    <p>우리나라 대표 특산물-! 경북에서 사이소~!</p>
+                </div>
+                <img src="img/market/mtop.png" alt="2021문화보부상 행사" class="mobile">
+            </article>
+            
+            <div class="subtitle">
+                <img src="img/market/subtitle.png" alt="학행">
+                <img src="img/market/m-subtitle.png" alt="학행">
+            </div>
+
+            <div class="comingsoon">
+                <img src="img/comingsoon.png" alt="comingsoon">
+                <img src="img/m-comingsoon.png" alt="comingsoon">
+            </div>
+
+            <!--
+            <article class="sell-con">
+                <a href="">
+                    <img src="img/market/sell-1.png" alt="고등어">
+                    <img src="img/market/m-sell-1.png" alt="고등어">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-2.png" alt="과메기">
+                    <img src="img/market/m-sell-2.png" alt="과메기">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-3.png" alt="감자">
+                    <img src="img/market/m-sell-3.png" alt="감자">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-1.png" alt="고등어">
+                    <img src="img/market/m-sell-1.png" alt="고등어">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-2.png" alt="과메기">
+                    <img src="img/market/m-sell-2.png" alt="과메기">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-3.png" alt="감자">
+                    <img src="img/market/m-sell-3.png" alt="감자">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-1.png" alt="고등어">
+                    <img src="img/market/m-sell-1.png" alt="고등어">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-2.png" alt="과메기">
+                    <img src="img/market/m-sell-2.png" alt="과메기">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-3.png" alt="감자">
+                    <img src="img/market/m-sell-3.png" alt="감자">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-1.png" alt="고등어">
+                    <img src="img/market/m-sell-1.png" alt="고등어">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-2.png" alt="과메기">
+                    <img src="img/market/m-sell-2.png" alt="과메기">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+                <a href="">
+                    <img src="img/market/sell-3.png" alt="감자">
+                    <img src="img/market/m-sell-3.png" alt="감자">
+                    <img src="img/market/hover.png" alt="hover">
+                </a>
+            </article>
+
+            <article class="number">
+                <a href="" class="prev">◀</a>
+                <a href="" class="page page-on">1</a>
+                <a href="" class="page">2</a>
+                <a href="" class="page">3</a>
+                <a href="" class="next">▶</a>
+            </article>
+            -->
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <div class="ezen-info">
+                    <p class="info-title">
+                        2021 찾아가는<br>
+                        <b>문화보부상</b>
+                    </p>
+                    <p class="info-text">
+                        서울특별시 강남구 테헤란로 2길 27, XCREW  
+                    </p>
+                </div> <!-- ezen-info end -->
+                
+                <div class="quick-link">
+                    <a href="tel:1566-3299">1566-3299</a>
+                    <a href="mailto:contact@xcrew.co.kr">contact@xcrew.co.kr</a>
+                    <p>copyrightⓒxcrew All Right Reserved</p>
+                </div> <!-- quick-link end -->
+            </div> <!-- footer-top end -->
+
+            <div class="footer-bottom">
+                <div class="f-logo-area">
+                    <a href="https://www.mcst.go.kr" target="_blank">
+                        <img src="img/f-logo1.png" alt="문화체육관광부 바로가기">
+                    </a>
+                    <a href="https://www.gb.go.kr" target="_blank">
+                        <img src="img/f-logo2.png" alt="경상북도청 바로가기">
+                    </a>
+                    <a href="https://gcube.or.kr:1021/home/main.asp" target="_blank">
+                        <img src="img/f-logo3.png" alt="경상북도컨텐츠진흥원 바로가기">
+                    </a>
+                </div>
+            </div> <!-- footer-bottom end -->
+        </footer>
+    </div> <!-- site-wrap end -->
+    
+</body>
+</html>

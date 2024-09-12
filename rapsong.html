@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 네이버최적화 소유권확인 -->
+    <meta name="naver-site-verification" content="" />
+    <!-- 페이지 설명 : 이게 있어야 검색 가능 -->
+    <meta name="description" content="경북 특산품을 담은 찾아가는 플리마켓, 2021 경북 문화보부상 여행">
+    <!-- 노출키워드 -->
+    <meta name="keywords" content="경북, 문화보부상, 경북여행, 경북특산품, 플리마켓, 경북플리마켓, 흥학행">
+    <!-- 선호URL -->
+    <link rel="canonical" href="https://gbmb.co.kr">
+
+
+
+    <!-- Open grapy : 카톡 공유하기 했을 때 뜨는 거 -->
+
+    <!-- 필수는 아닌데, 하단에 URL링크 뜨니까 간결한걸로 써주기 -->
+    <meta property="og:url" content="gbmb.co.kr"/>
+    <!-- 공유하는 링크의 타입 필수X -->
+    <meta property="og:type" content="website"/>
+    <!-- 페이지 제목 -->
+    <meta property="og:title" content="경북 문화보부상"/>
+    <!-- 페이지 설명 길게 안들어가니까 짧게 쓰기! -->
+    <meta property="og:description" content="신나고 배움이있고 가치가 있는 문화보부상 여행"/>
+    <!-- 페이지랑 같이 뜨는 이미지 -->
+    <meta property="og:image" content="https://gbmb.co.kr/source/img/event-ann/rap-main.png"/>        
+    
+    <title>경북 문화보부상</title>
+    <!-- 타이틀에 파비콘 넣기 -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <!-- 반응형 css -->
+    <link rel="stylesheet" href="css/rapsong.css">
+    <!-- <link rel="stylesheet" href="css/rwd-mobile.css"> -->
+    
+    <!-- 헤더/푸터 css -->
+    <link rel="stylesheet" href="css/hf.css">
+    <!-- 자바스크립트 기본 스타일시트 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    
+    <!-- 스크립트 -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- 스와이퍼 스크립트 -->
+    <script src="js/swiper.min.js"></script>
+    <!-- fancybox script -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- 우클릭 금지 스크립트 -->
+    <script type="text/javascript">
+		var omitformtags=["input", "textarea", "select"]
+		omitformtags=omitformtags.join("|")
+		function disableselect(e){
+		if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+		return false
+		}
+		function reEnable(){
+		return true
+		}
+		if (typeof document.onselectstart!="undefined")
+		document.onselectstart=new Function ("return false")
+		else{
+		document.onmousedown=disableselect
+		document.onmouseup=reEnable
+		}
+	$(document).ready(function(){
+	  $(document).bind('keydown', function(e) {
+		if(e.keyCode == 123) {
+		  e.preventDefault();
+		  e.returnValue = false;
+		}
+	  });
+	});
+	</script>
+
+</head>
+
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <div class="site-wrap" id="a0">
+        <div class="top-area">
+            <img src="img/event-ann/rap_bg.png">
+            <img src="img/event-ann/rap_mbg.png">
+        </div>
+        <div class="person">
+            <h2><span>[1등]</span> 신평근&박승찬&김대윤 참가자</h2>
+            <audio src="audio/rapsong1-shin&2.mp3" controls>
+                오디오가 출력되지 않습니다.
+            </audio>
+
+            <h2><span>[2등]</span> 박하선 참가자</h2>
+            <audio src="audio/rapsong2-park.mp3" controls>
+                오디오가 출력되지 않습니다.
+            </audio>
+
+            <h2><span>[2등]</span> 지타쉬 참가자</h2>
+            <audio src="audio/rapsong2-ztash.mp3" controls>
+                오디오가 출력되지 않습니다.
+            </audio>
+
+            <h2><span>[3등]</span> 문상현 참가자</h2>
+            <audio src="audio/rapsong3-Culture_Shock.wav" controls>
+                오디오가 출력되지 않습니다.
+            </audio>
+
+            <h2><span>[3등]</span> 김도현 참가자</h2>
+            <audio src="audio/rapsong3-kim.wav" controls>
+                오디오가 출력되지 않습니다.
+            </audio>
+
+            <h2><span>[3등]</span> 안현욱 참가자</h2>
+            <audio src="audio/rapsong3-ahn.mp3" controls>
+                오디오가 출력되지 않습니다.
+            </audio>
+
+            <p>
+                당첨되신 분들 모두 축하드리며,
+                <br>참여해주신 모든 분들께 감사드립니다.
+                <br>시상은 금 제작 소요기간으로 인해 12월 중 이루어질 예정입니다.
+                <br>다시 한 번 참여해주신 모든 분들께 감사의 인사를 드립니다.
+            </p>
+        </div>
+    </div> <!-- site-wrap end -->
+    
+</body>
+</html>

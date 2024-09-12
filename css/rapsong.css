@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #080300;
+    color: #FEFDBB;
+}
+
+.site-wrap {
+    padding-bottom: 100px;
+}
+
+.top-area {
+    width: 100%;
+}
+
+.top-area>img {
+    width: 100%;
+}
+
+.top-area>img:nth-child(2) {display: none;}
+
+.person {
+    width: 68%;
+    margin: 100px auto;
+    padding-bottom: 100px;
+}
+
+h2 {
+    color: #FEFDBB;
+    font-size: 4vh;
+    margin: 50px 0;
+}
+h2 span {font-size: 5.5vh;}
+
+audio {
+    width: 100%;
+}
+
+
+.ann {
+    width: 68%;
+    margin: 0 auto;
+}
+
+.person p {
+    font-size: 2.5vh;
+    color: #FEFDBB;
+    font-weight: 400;
+    text-align: center;
+    line-height: 3.5vh;
+    margin-top: 100px;
+}
+
+@media screen and (max-width:720px) {
+    .top-area>img:nth-child(1) {display: none;}
+    .top-area>img:nth-child(2) {display: block;}
+
+    .person {width: 92%;}
+
+    h2 {
+        font-size: 3vh;
+    }
+    h2 span {font-size: 4vh;}
+    .person p {font-size: 2vh;}
+
+}
+

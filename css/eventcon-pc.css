@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    color: #2b1c1f;
+}
+
+/* nav 클릭 */
+nav ul li:nth-child(6) a{
+    font-weight: 700;
+    color: #e9ac18;
+}
+
+section {
+    width: 100%;
+}
+
+/* top-area */
+.top-area, .top-area>img {
+    width: 100%;
+    position: relative;
+}
+.top-area>img:nth-child(2) {
+    display: none;
+}
+.news-contain {
+    width: 53%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2% 0 5% 0;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.travel {
+    width: 100%;
+    padding: 1% 0 20% 0;
+    border: 1px solid #e9ac18;
+}
+
+.name, .tel {
+    width: 100%;
+    border: 1px solid #e9ac18;
+    padding: 1% 0;
+    margin-bottom: 2%;
+}
+.notice {
+    margin-top: 5%;
+    padding: 3% 2%;
+    /* border: 1px solid #e9ac18; */
+    
+}
+.notice h4 {
+    color: #e9ac18;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.notice p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    margin-top: 3%;
+}
+
+.e-name {
+    width: 60%; 
+    float: left;}
+.e-date {
+    width: 40%; 
+    float: right;
+    text-align: right;
+    color: #888 !important;
+}
+.e-text {
+    padding: 2% 0;
+    border-bottom: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 1% 0;
+    border: none;
+    background-color: #e9ac18;
+    color: #fff;
+    margin-top: 5%;
+    border-radius: 50px;
+}
+
+
+
+@media screen and (max-width:1100px) {
+    .top-area {
+        width: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .news-contain {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width:720px) {
+    .top-area {
+        width: 100%;
+    }
+    .top-area>img:nth-child(1) {
+        display: none;
+    }
+    .top-area>img:nth-child(2) {
+        display: block;
+    }
+    .news-contain {
+        width: 92%;
+        margin-top: 18%;
+    }
+    .notice h4 {
+        font-size: 1rem;
+    }
+    .notice p {font-size: 0.7rem;}
+    
+}

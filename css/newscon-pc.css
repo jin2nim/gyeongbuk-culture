@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    color: #2b1c1f;
+}
+
+/* nav 클릭 */
+nav ul li:nth-child(4) a{
+    font-weight: 700;
+    color: #e9ac18;
+}
+
+section {
+    width: 100%;
+}
+
+/* top-area */
+.top-area, .top-area>img {
+    width: 100%;
+    position: relative;
+}
+.top-area>img:nth-child(2) {
+    display: none;
+}
+.news-contain {
+    width: 53%;
+    height: 1000px;
+    margin: 0 auto;
+    padding: 2% 0 5% 0;
+    text-align: left;
+}
+
+.update {
+    width: 20%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 2%;
+    color: #808080;
+    font-weight: 300;
+}
+
+.news-detail {
+    width: 75%;
+    height: 100%;
+    float: right;
+}
+
+.news-title {
+    text-align: left;
+    /* background-color: violet; */
+    height: 12%;
+    border-bottom: 1px solid #e9ac18;
+}
+
+.news-title h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #e9ac18;
+}
+
+.news-title p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 2% 0;
+    color: #333;
+}
+
+.short-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 4%;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.term, .spot, .sub-text {
+    margin-bottom: 2%;
+}
+
+.term p:nth-child(1), .spot p:nth-child(1) {
+    float: left;
+    margin-right: 2%;
+}
+
+.blog {
+    margin-top: 25px;
+    font-size: 1rem;
+    height: 500px;
+}
+
+
+/* 다른 글 보기 */
+.other {
+    width: 100%;
+    height: 100px;
+    font-size: 1rem;
+}
+
+.next span, .prev span {
+    font-size: 0.9rem;
+    margin-right: 2%;
+    color: #e9ac18;
+}
+.list span {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #e9ac18;
+    margin-right: 2%;
+}
+.next, .prev, .list {
+    width: 100%;
+    padding: 0.5% 0.5% 0.5% 2%;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.next, .prev {
+    margin-bottom: 1%;
+}
+
+
+@media screen and (max-width:1100px) {
+    .top-area {
+        width: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .news-contain {
+        width: 70%;
+    }
+    .update {
+        font-size: 0.8rem;
+    }
+    .news-title h2 {
+        font-size: 1.5rem;
+    }
+    .news-title p {
+        font-size: 0.9rem;
+    }
+    .short-text {
+        font-size: 0.7rem;
+    }
+    .blog {
+        font-size: 0.8rem;
+    }
+    
+    /* 다른 글 보기 */
+    .other {
+        font-size: 0.8rem;
+    }
+    .next span, .prev span {
+        font-size: 0.9rem;
+    }
+    .next, .prev {
+        margin-bottom: 1%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .top-area {
+        width: 100%;
+    }
+    .top-area>img:nth-child(1) {
+        display: none;
+    }
+    .top-area>img:nth-child(2) {
+        display: block;
+    }
+    .news-contain {
+        margin-top: 10%;
+        width: 92%;
+    }
+    .update {
+        font-size: 0.8rem;
+    }
+    .news-title h2 {
+        font-size: 1.5rem;
+    }
+    .news-title p {
+        font-size: 0.9rem;
+    }
+    .short-text {
+        font-size: 0.7rem;
+    }
+    .blog {
+        font-size: 0.8rem;
+    }
+    
+    /* 다른 글 보기 */
+    .other {
+        font-size: 0.8rem;
+    }
+    .next span, .prev span {
+        font-size: 0.9rem;
+    }
+    .next, .prev {
+        margin-bottom: 1%;
+    }
+}

@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 반응형 데스크탑 스타일 */
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #000000;}
+body, html {
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+}
+
+.site-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    background-color: #f1eee6;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-area {
+    width: 1056px;
+    height: 100px;
+    /* background-color: aliceblue; */
+    /* 자식객체를 옆으로 나란히 하되, 부모보다 가로크기가 커질 경우 아래로 떨어지게,,, */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 110;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 스크롤시 헤더 고정 */
+
+.h-bg {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 100;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.h-bg, .header-area {
+    height: 100px;
+    line-height: 70px;
+}
+
+
+/* pc에서는 메뉴버튼과 클로즈 버튼 안보이게 해야함. */
+
+.menu-btn, .close-btn {
+    display: none;
+}
+
+.logo a {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    padding-top: 15px;
+}
+
+nav ul li {
+    float: left;
+    margin-left: 1.5vw;
+    font-size: 17px;
+    line-height: 100px;
+    font-weight: 500;
+}
+
+nav ul li:last-child {
+    display: none;
+}
+
+nav ul li:hover a {
+    color: #e9ac18;
+    font-weight: 700;
+    border-bottom: 3px solid #e9ac18;
+}
+
+.logo a img {
+    height: 70px;
+}
+
+/* 서브페이지 상단부분 */
+/* subtop-area */
+.subtop-area, .subtop-area>img {
+    width: 100%;
+    position: relative;
+}
+
+.subtop-area>.mobile {
+    display: none;
+}
+
+@media screen and (max-width:720px) {
+    .subtop-area>img:nth-child(1), .title-area {
+        display: none;
+    }
+    .subtop-area>.mobile {
+        display: block;
+    }
+}
+
+.title-area {
+    width: 54%;
+    height: 20%;
+    /* background-color: #2b1c1f; */
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.title-area h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #daa342;
+}
+
+.title-area p {
+    font-size: 1.45rem;
+    font-weight: 400;
+    color: #4c391c;
+    margin-top: 1%;
+}
+
+@media screen and (max-width:1500px) {
+    .title-area h2 {
+        font-size: 2.5rem;
+    }
+    .title-area p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:1300px) {
+    .title-area h2 {
+        font-size: 2.3rem;
+    }
+    .title-area p {
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .title-area h2 {
+        font-size: 2.1rem;
+    }
+    .title-area p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:1100px) {
+    .title-area h2 {
+        font-size: 2rem;
+    }
+    .title-area p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:900px) {
+    .title-area {
+        display: none;
+    }
+}
+/* footer */
+
+footer {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    background-color: #4c391c;
+    color: #ffffff;
+    font-size: 1rem;
+    height: 300px;
+    padding: 65px 0 0 0;
+}
+
+.footer-top {
+    width: 1056px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer-top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 5vh !important;
+}
+
+.ezen-info {
+    width: 50%;
+    padding-right: 3vw;
+}
+
+.info-title {
+    font-family: 'Binggrae';
+    font-size: 18pt;
+    color: #eeeeee;
+}
+
+.info-title b {
+    font-size: 26pt;
+    margin-top: 2px;
+}
+
+.info-text {
+    font-size: 12pt;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+.quick-link {
+    margin-top: 50px;
+    float: left;
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+.quick-link a {
+    color: #ffffff;
+    margin-right: 35px;
+}
+
+.quick-link p {
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #231815;
+    height: 120px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.f-logo-area {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: aliceblue; */
+}
+
+.f-logo-area a {
+    width: 25%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: yellow; */
+}
+
+.f-logo-area a:nth-child(1) {
+    left: 0;
+}
+.f-logo-area a:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30% !important;
+
+}
+.f-logo-area a:nth-child(3) {
+    right: 0;
+}
+
+.f-logo-area img {
+    width: 100%;
+    display: block;
+}
+
+
+@media screen and (max-width:1100px) {
+    .header-area, .footer-top, .f-logo-area {
+        width: 720px;
+    }
+
+    /* 스크롤시 헤더 고정 */
+    .h-bg, .header-area {
+        height: 90px;
+        line-height: 60px;
+    }
+
+
+    /* pc에서는 메뉴버튼과 클로즈 버튼 안보이게 해야함. */
+
+    nav ul li {
+        float: left;
+        margin-left: 1.5vw;
+        font-size: 15px;
+        line-height: 80px;
+        font-weight: 500;
+    }
+
+    nav ul li:hover a {
+        color: #e9ac18;
+        font-weight: 700;
+        border-bottom: 3px solid #e9ac18;
+    }
+
+    footer {
+        height: 250px;
+        font-size: 0.8rem;
+    }
+    .footer-bottom {
+        height: 100px;
+    }
+
+    .logo a img {
+        height: 60px;
+    }
+
+    .info-title {
+        font-size: 15pt;
+    }
+    
+    .info-title b {
+        font-size: 20pt;
+    }
+    
+    .info-text {
+        font-size: 10pt;
+    }
+    
+    .quick-link {
+        font-size: 10pt;
+    }
+    
+
+}
+
+@media screen and (max-width:720px) {
+    .header-area {
+        width: 100vw;
+        height: 60px;
+        /* background-color: aliceblue; */
+        /* 자식객체를 옆으로 나란히 하되, 부모보다 가로크기가 커질 경우 아래로 떨어지게,,, */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 110;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* 스크롤시 헤더 고정 */
+
+    .h-bg {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        background-color: #ffffff;
+        z-index: 100;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .h-bg, .header-area {
+        height: 60px;
+        line-height: 70px;
+    }
+
+
+    /* pc에서는 메뉴버튼과 클로즈 버튼 안보이게 해야함. */
+
+    .menu-btn, .close-btn {
+        display: none;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 60px;
+    }
+
+    .logo a {
+        display: block;
+        transition: all 0.3s ease-in-out;
+        padding-top: 5px;
+    }
+
+    .logo a img {
+        height: 50px;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: none;
+    }
+
+    nav ul li {
+        width: 60%;
+        position: absolute;
+        float: none;
+        font-size: 17px;
+        line-height: 100px;
+        font-weight: 500;
+        text-align: left;
+        /* background-color: rosybrown; */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav ul li:last-child {
+        display: block;
+        width: 40%;
+        top: 10%;
+    }
+
+    nav ul li:nth-child(1) {
+        top: 25%;
+    }
+    nav ul li:nth-child(2) {
+        top: 35%;
+    }
+    nav ul li:nth-child(3) {
+        top: 45%;
+    }
+    nav ul li:nth-child(4) {
+        top: 55%;
+    }
+    nav ul li:nth-child(5) {
+        top: 65%;
+    }
+    nav ul li:nth-child(6) {
+        top: 75%;
+    }
+
+    nav ul li a img {
+        width: 100%;
+    }
+
+    nav ul li:last-child:hover a {
+        border-bottom: none;
+    }
+
+    .close-btn {
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 3%;
+        left: 10%;
+        
+    }
+
+    .close-btn>img {
+        width: 10%;
+        cursor: pointer;
+    }
+
+    .menu-btn {
+        height: 50%;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 5%;
+        cursor: pointer;
+    }
+
+    .menu-btn>img {
+        height: 100%;
+    }
+
+
+    /* footer */
+
+    footer {
+        font-size: 0.7rem;
+        height: 250px;
+        padding: 40px 0 0 0; 
+    }
+
+    .footer-top {
+        width: 90%;
+        padding-left: 30px;
+    }
+
+    .ezen-info {
+        width: 100%;
+    }
+
+    .info-title {
+        font-family: 'Binggrae';
+        font-size: 12pt;
+        color: #eeeeee;
+    }
+
+    .info-title b {
+        font-size: 18pt;
+        margin-top: 2px;
+    }
+
+    .info-text {
+        font-size: 8pt;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+
+
+    .quick-link {
+        font-size: 8pt;
+    }
+
+
+    .footer-bottom {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #231815;
+        height: 80px;
+        margin-top: 16px;
+    }
+
+    .f-logo-area {
+        width: 90%;
+    }
+
+    .f-logo-area a:nth-child(2) {
+        left: 50%;
+        transform: translateX(-59%) !important;
+        top: 40% !important;
+    }
+
+    .f-logo-area img {
+        height: 100%;
+        display: block;
+    }
+
+
+}

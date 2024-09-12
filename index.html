@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 네이버최적화 소유권확인 -->
+    <meta name="naver-site-verification" content="" />
+    <!-- 페이지 설명 : 이게 있어야 검색 가능 -->
+    <meta name="description" content="경북 특산품을 담은 찾아가는 플리마켓, 2021 경북 문화보부상 여행">
+    <!-- 노출키워드 -->
+    <meta name="keywords" content="경북, 문화보부상, 경북여행, 경북특산품, 플리마켓, 경북플리마켓, 흥학행">
+    <!-- 선호URL -->
+    <link rel="canonical" href="https://gbmb.co.kr">
+
+
+
+    <!-- Open grapy : 카톡 공유하기 했을 때 뜨는 거 -->
+
+    <!-- 필수는 아닌데, 하단에 URL링크 뜨니까 간결한걸로 써주기 -->
+    <meta property="og:url" content="gbmb.co.kr"/>
+    <!-- 공유하는 링크의 타입 필수X -->
+    <meta property="og:type" content="website"/>
+    <!-- 페이지 제목 -->
+    <meta property="og:title" content="경북 문화보부상"/>
+    <!-- 페이지 설명 길게 안들어가니까 짧게 쓰기! -->
+    <meta property="og:description" content="신나고 배움이있고 가치가 있는 문화보부상 여행"/>
+    <!-- 페이지랑 같이 뜨는 이미지 -->
+    <meta property="og:image" content="https://gbmb.co.kr/main-img.png"/>        
+    
+    <title>경북 문화보부상</title>
+    <!-- 타이틀에 파비콘 넣기 -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <!-- 반응형 css -->
+    <link rel="stylesheet" href="css/rwd-pc.css">
+    <link rel="stylesheet" href="css/rwd-mobile.css">
+    
+    <!-- 헤더/푸터 css -->
+    <link rel="stylesheet" href="css/hf.css">
+    <!-- 자바스크립트 기본 스타일시트 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    
+    <!-- 스크립트 -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- 스와이퍼 스크립트 -->
+    <script src="js/swiper.min.js"></script>
+    <!-- fancybox script -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- 우클릭 금지 스크립트 -->
+    <script type="text/javascript">
+		var omitformtags=["input", "textarea", "select"]
+		omitformtags=omitformtags.join("|")
+		function disableselect(e){
+		if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+		return false
+		}
+		function reEnable(){
+		return true
+		}
+		if (typeof document.onselectstart!="undefined")
+		document.onselectstart=new Function ("return false")
+		else{
+		document.onmousedown=disableselect
+		document.onmouseup=reEnable
+		}
+	$(document).ready(function(){
+	  $(document).bind('keydown', function(e) {
+		if(e.keyCode == 123) {
+		  e.preventDefault();
+		  e.returnValue = false;
+		}
+	  });
+	});
+	</script>
+
+</head>
+
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <div class="site-wrap" id="a0">
+        <header>
+            <div class="header-area">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/index/h-logo.png" alt="흥학행">
+                    </a>
+                </h1>
+                <div class="menu-btn"><img src="img/menu-btn.png" alt="메뉴"></div>
+
+                <nav>
+                    <div class="close-btn"><img src="img/close-btn.png" alt="X"></div>
+                    <ul>
+                        <li><a href="mbintro.html">행사 소개</a></li>
+                        <li><a href="mblive.html">보부상 라이브</a></li>
+                        <li><a href="mbmarket.html">보부상 장터</a></li>
+                        <li><a href="mbnews.html">보부상 뉴스</a></li>
+                        <li><a href="mbtrip.html">보부상 투어</a></li>
+                        <li><a href="mbevent.html">보부상 이벤트</a></li>
+                        <li><a href="index.html"><img src="img/index/h-logo.png" alt="흥학행문화보부상"></a></li>
+                    </ul>
+                </nav>
+            </div> <!-- header-area end -->
+            <div class="h-bg"></div>
+        </header>
+
+        <script>
+            $(function(){
+                $('.m-menu-btn').click(function(){
+                    $('nav').show();
+                });
+                $('.m-menu-btn').click(function(){
+                    $('.close-area').show();
+                });
+                $('.close-area').click(function(){
+                    $('nav').hide();
+                });
+                $('.close-area').click(function(){
+                    $('.close-area').hide();
+                });
+
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 50)
+                    $('.h-bg').slideDown(300)
+                    else {
+                    $('.h-bg').slideUp(300)
+                    }
+                });
+            });
+        </script>
+
+        <section>
+            <article class="top-area">
+                <img src="img/index/main-visual.png" alt="메인" class="pc">
+                <img src="img/index/m-main-visual.png" alt="메인" class="mobile">
+            </article> <!-- top-area end -->
+
+            <article class="v-slide">
+                <img src="img/index/back-img.png" alt="v-slide" class="pc">
+                <img src="img/index/m-back-img.png" alt="v-slide" class="mobile">
+                <div class="line-area"></div>
+                <div class="text-area">
+                    <p>흥과 신명나는 <b><span>문화보부상</span>의 작은 축제!</b></p>
+                </div>
+
+                <div class="main-slider">
+                    <div class="swiper-container m-slide">
+                        <!-- 스와이퍼 -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <iframe src="https://www.youtube.com/embed/gYk-5azAWq0" 
+                                    title="YouTube video player" frameborder="0" 
+                                    class="teaser-youtube" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe src="https://player.vimeo.com/video/179871044?h=4cea42a05d" 
+                                    title="YouTube video player" frameborder="0" 
+                                    class="teaser-youtube" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe src="https://www.youtube.com/embed/gYk-5azAWq0" 
+                                    title="YouTube video player" frameborder="0" 
+                                    class="teaser-youtube" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe src="https://player.vimeo.com/video/179871044?h=4cea42a05d" 
+                                    title="YouTube video player" frameborder="0" 
+                                    class="teaser-youtube" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div> <!-- swiper-wrapper end -->
+                    </div> <!-- swiper-container end -->
+
+                    <!-- 스와이퍼 페이져 -->
+                    <div class="swiper-pagination m-pager"></div>
+
+                    <!-- 스와이퍼 좌우버튼 -->
+                    <div class="swiper-button-next m-next"></div>
+                    <div class="swiper-button-prev m-prev"></div>
+
+                </div>
+
+                <script>
+                    var mSlide = new Swiper('.m-slide',{
+                        loop: true,
+                        navigation : {
+                            nextEl : '.m-next',
+                            prevEl : '.m-prev'
+                        },
+                        pagination : {
+                            el : '.m-pager',
+                            clickable : true
+                        },
+                    });
+                </script>
+            </article>
+            <!--v-slide end-->
+            
+            <article class="contant-slide">
+                <div class="c-slider">
+                    <div class="swiper-container c-slide">
+                        <!-- 스와이퍼 -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/index/slide1.png" alt="경북쌀 라이브 예고">
+                                <img src="img/index/m-slide1.png" alt="경북쌀 라이브 예고">
+                                <a href="">
+                                    <img src="img/index/slide-btn.png" alt="자세히보기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/index/slide1.png" alt="경북쌀 라이브 예고">
+                                <img src="img/index/m-slide1.png" alt="경북쌀 라이브 예고">
+                                <a href="">
+                                    <img src="img/index/slide-btn.png" alt="자세히보기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/index/slide1.png" alt="경북쌀 라이브 예고">
+                                <img src="img/index/m-slide1.png" alt="경북쌀 라이브 예고">
+                                <a href="">
+                                    <img src="img/index/slide-btn.png" alt="자세히보기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/index/slide1.png" alt="경북쌀 라이브 예고">
+                                <img src="img/index/m-slide1.png" alt="경북쌀 라이브 예고">
+                                <a href="">
+                                    <img src="img/index/slide-btn.png" alt="자세히보기">
+                                </a>
+                            </div>
+                        </div> <!-- swiper-wrapper end -->
+                    </div> <!-- swiper-container end -->
+
+                    <!-- 스와이퍼 페이져 -->
+                    <div class="swiper-pagination c-pager"></div>
+
+
+                </div>
+
+                <script>
+                    var mSlide = new Swiper('.c-slide',{
+                        loop: true,
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        // autoplay : {
+                        //     delay : 2500,
+                        //     disableOnInteraction : true,
+                        // },
+                        pagination : {
+                            el : '.c-pager',
+                            clickable : true
+                        },
+                    });
+                </script>
+            </article>
+            <!--contant-slide end-->
+
+            <article class="sell sell-mobile">
+                <img src="img/index/m-back2.png" alt="back">
+                <div class="msell-slider">
+                    <div class="swiper-container msell-slide">
+                        <!-- 스와이퍼 -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-1.png" alt="간고등어">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-2.png" alt="구룡포과메기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-3.png" alt="구미감자">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-2.png" alt="구룡포과메기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-1.png" alt="간고등어">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-2.png" alt="구룡포과메기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-3.png" alt="구미감자">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-2.png" alt="구룡포과메기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-1.png" alt="간고등어">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/m-sell-3.png" alt="구미감자">
+                                </a>
+                            </div>
+                        </div> <!-- swiper-wrapper end -->
+                    </div> <!-- swiper-container end -->
+
+                    <!-- 스와이퍼 페이져 -->
+                    <div class="swiper-pagination msell-pager"></div>
+                    <!-- 자세히보기 버튼 -->
+                    <a href=""><img src="img/index/slide-btn.png" alt="자세히보기"></a>
+
+                </div>
+
+                <script>
+                    var mSlide = new Swiper('.msell-slide',{
+                        loop: true,
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                        pagination : {
+                            el : '.msell-pager',
+                            clickable : true
+                        },
+                    });
+                </script>
+            </article>
+            
+            <article class="sell sell-pc">
+                <img src="img/index/back-2.png" alt="back">
+                <div class="sell-slider">
+                    <div class="swiper-container sell-slide">
+                        <!-- 스와이퍼 -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-1.png" alt="간고등어">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-2.png" alt="구룡포과메기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-3.png" alt="구미감자">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-2.png" alt="구룡포과메기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-1.png" alt="간고등어">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-2.png" alt="구룡포과메기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-3.png" alt="구미감자">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-2.png" alt="구룡포과메기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-1.png" alt="간고등어">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="">
+                                    <img src="img/index/sell-3.png" alt="구미감자">
+                                </a>
+                            </div>
+                        </div> <!-- swiper-wrapper end -->
+                    </div> <!-- swiper-container end -->
+
+                    <!-- 스와이퍼 페이져 -->
+                    <div class="swiper-pagination sell-pager"></div>
+
+
+                </div>
+
+                <script>
+                    var mSlide = new Swiper('.sell-slide',{
+                        loop: true,
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination : {
+                            el : '.sell-pager',
+                            clickable : true
+                        },
+                    });
+                </script>
+            </article>
+            <!--sell end-->
+
+            <article class="news">
+                <img src="img/index/back-3.png" alt="back">
+                <img src="img/index/m-back3.png" alt="back">
+                <div class="news-section">
+                    <div class="news-con news1">
+                        <img class="news-img" src="img/index/newsp1.png" alt="뉴스1">
+                        <h2 class="mb-area">#포항</h2>
+                        <p class="news-title">2021 경북 문화보부상</p>
+                        <p class="mb-text">경북관광과 함께하는 문화공연 문화보부상</p>
+                    </div>
+                    <div class="news-con news2">
+                        <img class="news-img" src="img/index/newsp2.png" alt="뉴스1">
+                        <h2 class="mb-area">#포항</h2>
+                        <p class="news-title">2021 경북 문화보부상</p>
+                        <p class="mb-text">경북관광과 함께하는 문화공연 문화보부상</p>
+                    </div>
+                    <div class="news-con news3">
+                        <img class="news-img" src="img/index/newsp3.png" alt="뉴스1">
+                        <h2 class="mb-area">#포항</h2>
+                        <p class="news-title">2021 경북 문화보부상</p>
+                        <p class="mb-text">경북관광과 함께하는 문화공연 문화보부상</p>
+                    </div>
+                    <div class="news-con news4">
+                        <img class="news-img" src="img/index/newsp4.png" alt="뉴스1">
+                        <h2 class="mb-area">#포항</h2>
+                        <p class="news-title">2021 경북 문화보부상</p>
+                        <p class="mb-text">경북관광과 함께하는 문화공연 문화보부상</p>
+                    </div>
+                    <div class="news-con news5">
+                        <img class="news-img" src="img/index/newsp3.png" alt="뉴스1">
+                        <h2 class="mb-area">#포항</h2>
+                        <p class="news-title">2021 경북 문화보부상</p>
+                        <p class="mb-text">경북관광과 함께하는 문화공연 문화보부상</p>
+                    </div>
+                    <div class="news-con news6">
+                        <img class="news-img" src="img/index/newsp1.png" alt="뉴스1">
+                        <h2 class="mb-area">#포항</h2>
+                        <p class="news-title">2021 경북 문화보부상</p>
+                        <p class="mb-text">경북관광과 함께하는 문화공연 문화보부상</p>
+                    </div>
+                </div> 
+                <a href="mbnews.html" class="more">
+                    <img src="img/index/slide-btn.png" alt="더보기">
+                </a>
+            </article>
+            <!--news end-->
+
+            <article class="trip">
+                <img src="img/index/back-4.png" alt="back">
+                <img src="img/index/m-back4.png" alt="back">
+                <div class="trip-slider">
+                    <div class="swiper-container trip-slide">
+                        <!-- 스와이퍼 -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <iframe src="https://www.youtube.com/embed/2y4qNDjujyw" 
+                                    title="YouTube video player" frameborder="0" 
+                                    class="teaser-youtube" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                                <a href="">
+                                    <img src="img/index/slide-btn.png" alt="자세히보기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe src="https://www.youtube.com/embed/2y4qNDjujyw" 
+                                    title="YouTube video player" frameborder="0" 
+                                    class="teaser-youtube" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                                <a href="">
+                                    <img src="img/index/slide-btn.png" alt="자세히보기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe src="https://www.youtube.com/embed/2y4qNDjujyw" 
+                                    title="YouTube video player" frameborder="0" 
+                                    class="teaser-youtube" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                                <a href="">
+                                    <img src="img/index/slide-btn.png" alt="자세히보기">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe src="https://www.youtube.com/embed/2y4qNDjujyw" 
+                                    title="YouTube video player" frameborder="0" 
+                                    class="teaser-youtube" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                                <a href="">
+                                    <img src="img/index/slide-btn.png" alt="자세히보기">
+                                </a>
+                            </div>
+                        </div> <!-- swiper-wrapper end -->
+                    </div> <!-- swiper-container end -->
+
+                    <!-- 스와이퍼 페이져 -->
+                    <div class="swiper-pagination trip-pager"></div>
+
+
+                </div> <!-- main-slider end -->
+
+                <script>
+                    var mSlide = new Swiper('.trip-slide',{
+                        loop: true,
+                        spaceBetween: 0,
+                        pagination : {
+                            el : '.trip-pager',
+                            clickable : true
+                        },
+                    });
+                </script>
+            </article>
+            <!--trip end-->
+            
+            
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <div class="ezen-info">
+                    <p class="info-title">
+                        2021 찾아가는<br>
+                        <b>문화보부상</b>
+                    </p>
+                    <p class="info-text">
+                        서울특별시 강남구 테헤란로 2길 27, XCREW  
+                    </p>
+                </div> <!-- ezen-info end -->
+                
+                <div class="quick-link">
+                    <a href="tel:1566-3299">1566-3299</a>
+                    <a href="mailto:contact@xcrew.co.kr">contact@xcrew.co.kr</a>
+                    <p>copyrightⓒxcrew All Right Reserved</p>
+                </div> <!-- quick-link end -->
+            </div> <!-- footer-top end -->
+
+            <div class="footer-bottom">
+                <div class="f-logo-area">
+                    <a href="https://www.mcst.go.kr" target="_blank">
+                        <img src="img/f-logo1.png" alt="문화체육관광부 바로가기">
+                    </a>
+                    <a href="https://www.gb.go.kr" target="_blank">
+                        <img src="img/f-logo2.png" alt="경상북도청 바로가기">
+                    </a>
+                    <a href="https://gcube.or.kr:1021/home/main.asp" target="_blank">
+                        <img src="img/f-logo3.png" alt="경상북도컨텐츠진흥원 바로가기">
+                    </a>
+                </div>
+            </div> <!-- footer-bottom end -->
+        </footer>
+    </div> <!-- site-wrap end -->
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    color: #2b1c1f;
+}
+
+/* nav 클릭 */
+nav ul li:nth-child(1) a{
+    font-weight: 700;
+    color: #e9ac18;
+}
+
+section {
+    width: 100%;
+}
+
+.contant, .contant>img {
+    width: 100%;
+    position: relative;
+}
+
+.live-area, .live-area>img {
+    width: 100%;
+    position: relative;
+}
+
+.live-area>a {
+    position: absolute;
+    width: 10%;
+    bottom: 36%;
+    left: 23%;
+}
+
+.live-area>a>img {
+    width: 100%;
+}
+
+section img {
+    display: block;
+}
+.m-intro {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    .contant, .live-area {
+        width: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width:720px) {
+    .contant, .live-area {
+        display: none;
+    }
+    .m-intro {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .m-intro>img {
+        width: 100%;
+    }
+    .m-intro>img:nth-child(1) {
+        margin-top: 5%;
+    }
+    .m-intro>a {
+        position: absolute;
+        width: 31.5%;
+        bottom: 3%;
+        left: 4.8%;
+    }
+    .m-intro>a>img {
+        width: 100%;
+    }
+}
+
